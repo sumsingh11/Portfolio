@@ -1,0 +1,177 @@
+/* Global styles to reset margins and set consistent font and background */
+body {
+	margin: 0; /* Removes default margin for a clean layout */
+	background: #c8c492; 
+	font-family: sans-serif; 
+	color: #000070; 
+}
+
+/* General padding for main structural elements */
+header, main, footer {
+	padding: 5px 100px; 
+}
+
+/* Navigation styling */
+nav {
+	display: flex; /* Creates a flexible layout for navigation */
+	justify-content: space-between; /* Spreads navigation items evenly */
+	align-items: center; /* Vertically centers the items */
+}
+
+nav ul {
+	display: flex; /* Aligns list items in a row */
+}
+
+a {
+	text-decoration: none; /* Removes default underlining of links */
+}
+
+nav ul li {
+	font-weight: 900;
+	list-style: none; /* Removes default list styling */
+}
+
+nav ul li a {
+	padding: 0 30px; 
+	color: #000070; 
+}
+
+/* Logo styling */
+.logo {
+	font-size: 30px; /* Sets a large font size for prominence */
+	font-weight: 600; /* Makes the logo bold */
+}
+
+/* Home section layout */
+.home-section {
+	display: flex; /* Aligns content horizontally */
+	justify-content: space-between; /* Spreads content apart */
+	align-items: center; 
+	font-weight: 600; /* Sets a bold font weight */
+}
+
+.img-main {
+	width: 500px; /* Defines a fixed width for the image */
+	border-radius: 50%; /* Makes the image circular */
+}
+
+.home-title {
+	font-size: 55px; 
+	margin: 0px; 
+}
+
+.home-small {
+	font-size: 18px; /* Sets a smaller font size for subtitles */
+}
+
+.btn-resume {
+	padding: 10px 20px; /* Adds padding for better clickability */
+	border-radius: 4px; 
+	border: none; 
+	background: #f5ee84; 
+color: #000070;
+	cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Section title styling */
+.section-title {
+	color: #F7F197; 
+	font-size: 60px; 
+	margin-bottom: 0; /* Removes bottom margin for close spacing */
+}
+
+/* About section layout */
+.about-section {
+	width: 50%; /* Restricts width for readability */
+}
+
+.about-section p {
+	line-height: 25px; /* Improves text readability with spacing */
+}
+
+/* Styling for cards in the work section */
+.card img {
+	width: 350px; /* Sets a consistent width for card images */
+	min-height: 280px; 
+}
+
+.card-title {
+	font-size: 22px; /* Uses a medium font size for titles */
+	font-weight: 600; 
+	margin-top: 10px; 
+	margin-bottom: 0; /* Removes unnecessary bottom spacing */
+}
+
+.card-section {
+	display: flex; /* Aligns cards horizontally */
+	justify-content: space-between; /* Spreads cards evenly */
+}
+
+/* Contact section layout */
+.contact-section ul {
+	padding-left: 0; /* Removes default padding for the list */
+}
+
+.contact-section ul li {
+	list-style: none; /* Removes list styling */
+	display: flex; /* Aligns icons and text horizontally */
+	align-items: center; 
+	gap: 10px; /* Adds spacing between items */
+}
+
+/* Form styling */
+.contact-form label {
+	display: block; /* Ensures labels appear above inputs */
+	font-size: 22px; 
+	color: #000; 
+}
+
+input, textarea {
+	width: 50%; /* Restricts width to half the container */
+	padding: 10px; 
+	border: none; 
+}
+
+.btn-submit {
+	border: none; /* Removes default border */
+	background: #fff; 
+	color: #000; 
+	border-radius: 10px; /* Rounds the corners */
+	padding: 10px 20px; 
+	font-size: 20px; 
+	font-weight: 600; 
+}
+
+/* Responsive design for medium screens */
+@media only screen and (max-width: 991px) {
+	header, main, footer {
+		padding: 5px 10px; /* Reduces padding for smaller screens */
+	}
+
+	.about-section, .work-sub-title {
+		width: 100%; /* Expands sections to full width */
+	}
+
+	.card-section, .contact-block, .home-section {
+		display: block; /* Stacks elements vertically */
+	}
+
+	.card-section .card {
+		margin-bottom: 40px; /* Adds spacing between cards */
+	}
+
+	.logo {
+		font-size: 20px; /* Reduces logo size for smaller screens */
+	}
+
+	nav ul li a {
+		padding: 0 5px; /* Reduces padding for compact navigation */
+	}
+}
+
+/* Responsive design for small screens */
+@media only screen and (max-width: 720px) {
+	input, textarea {
+		width: 95%; /* Expands inputs to fit smaller screens */
+	}
+}
